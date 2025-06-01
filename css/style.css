@@ -1,0 +1,39 @@
+         .x{
+            color: burlywood; 
+            font-size: 100px;
+        }
+        .y{
+            color: pink; 
+            font-size: 100px;
+        }
+        #z{
+            color: gray; 
+            font-size: 100px;
+        }
+        p {
+            color:blue; 
+            font-size: 30px;
+            font-weight: bold;
+        }
+        a {
+            color: crimson;
+            font-size: larger;
+            text-decoration: none;
+        }
+        body{
+            background-color:white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        div{
+            color: rgb(0, 200 , 200, 1);
+            border: 10px solid green;
+            width: 50%;
+            margin: 100px;
+            padding: 100px;
+        }
+        .img1{
+            float: right;;
+        }
+        p{
+            clear: right;
+        }

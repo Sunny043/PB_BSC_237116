@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="number" name="int2" id="int1">
+    <button id="btn1">submit</button>
+    <input type="number" name="int2" id="int2">
+    <button id="btn2">add</button>
+    <button id="btn3">sub</button>
+    <button id="btn4">mul</button>
+    <button id="btn5">division</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p> -->
+    <input type="number" name="int" id="int">
+    <button id="btn">random</button>
+    <p id="para"></p>
+    <script>
+        // let var1=""
+        // document.getElementById("btn1").onclick=function(){
+        //     val1=document.getElementById('int1').value;
+        //     document.getElementById('p1').innerHTML=val1;
+        // }
+        // document.getElementById("btn2").onclick=function(){
+        //     var val2=document.getElementById('int2').value;
+        //     document.getElementById('p2').innerHTML=val2;
+        //     var sum= Number(val1)+Number(val2);
+        //     document.getElementById("p3").innerHTML=Number(sum);
+        // }
+        // document.getElementById("btn3").onclick=function(){
+        //     var val2=document.getElementById('int2').value;
+        //     document.getElementById('p2').innerHTML=val2;
+        //     var sub= Number(val1)-Number(val2);
+        //     document.getElementById("p3").innerHTML=Number(sub);
+        // }
+        // document.getElementById("btn4").onclick=function(){
+        //     var val2=document.getElementById('int2').value;
+        //     document.getElementById('p2').innerHTML=val2;
+        //     var mul= Number(val1)*Number(val2);
+        //     document.getElementById("p3").innerHTML=Number(mul);
+        // }
+        // document.getElementById("btn5").onclick=function(){
+        //     var val2=document.getElementById('int2').value;
+        //     document.getElementById('p2').innerHTML=val2;
+        //     var division= Number(val1)/Number(val2);
+        //     document.getElementById("p3").innerHTML=parseFloat(division);
+        // }
+        
+         var val=Math.floor(Math.random()*5)+1;
+        console.log(val);
+        document.getElementById('btn').onclick=function(){ 
+            var guess=document.getElementById("int").value;
+            if (guess==val){
+                alert("you won!")
+            }
+            else{
+                alert("You lost!")
+            }
+        }
+        for(var i=0;i<5;i++){
+            alert(i)
+        }
+        var i=0;
+        while(i<5){
+            i++;
+            alert(i);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <button>click me</button>
+    <h1 id="head">heading</h1>
+    <button id="btn">click me</button>
+    <script>
+        document.getElementsByTagName('button')[0].onclick=function(){
+            document.getElementsByTagName("h1")[0].innerHTML="Hello world!";
+            document.getElementsByTagName("h1")[0].style.color='red';
+        }
+        document.getElementById('btn').onclick=function(){
+            document.getElementById('head').innerText='Hello world';
+            document.getElementById('head').style.color='blue';
+            document.getElementById('head').style.fontSize='50px'
+        }
+    </script>
+</body>
+</html>

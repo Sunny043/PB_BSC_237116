@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <button onclick="alert('Hello,world!')">click me</button>
+    <h2 class="head"></h2>
+    <p id="para"></p>
+    <h1>This is heading1</h1>
+    <button onclick="confirm('SUNNY')">Click Me</button>
+    <script>
+        a = "Sunny";
+        b = "Bojja";
+        c = a + b;
+        console.log(c)
+        console.log(c.length);
+        console.log(c.slice(1, 5));
+        console.log(c.toUpperCase());
+        console.log(c.toLowerCase());
+        function Func(){
+            alert("This an alert");
+        }
+        Func();
+        x=16;
+        y=10;
+        z=x+y;
+        function add(){
+            alert("the sum of x and y is "+z);
+        }
+        add();
+        function sum(a,b,c){
+            var add;
+            add=a+b+c;
+            return add;
+        }
+        alert(sum(5,10,16));
+        var car={
+            car_name:"BMW",
+            car_color:"Maroon",
+            car_model:"M340i",
+            car_mileage:5,
+            car_details:function(){
+                return this.car_name + " " + this.car_color;
+            }
+        }
+        console.log(car["car_color"])
+        console.log(car["car_details"])
+
+        document.getElementsByTagName('h1')[0].innerHTML="Hello,world!";
+        document.getElementsByClassName('head')[0].innerHTML=='this is a heading';
+        document.getElementById('para').style.color='red';
+    </script>
+</body>
+
+</html>

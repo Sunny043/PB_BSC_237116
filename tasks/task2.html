@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="h">This is heading</h1>
+    <div>
+      <p class="p">This is a para</p>
+    </div>
+        <script>
+        document.getElementsByClassName('p')[0].onclick=function(){
+            document.getElementsByClassName('h')[0].innerText= h+p;
+        }
+        document.getElementsByClassName('p')[0].onclick=function(){
+            this.style.display='none'
+        }
+    </script>
+</body>
+</html>
